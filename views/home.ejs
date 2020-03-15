@@ -1,0 +1,30 @@
+<%- include ("../partials/header") %>
+
+<div class="mainWrapper"> <!-- Wrapper for the login section -->
+			<div class="logo1"></div> <!--Div to house the logo -->
+			<div class="title1">Curám Mé</div> <!--Title div -->
+			<div class="searchInputs"> <!-- Div to house the input of the login incase padding or adjustments are needed -->
+				<form name="patient_search" accept-charset="UTF-8" action="/search" method="post" onsubmit="return verify()">
+					<div class="field1">
+						<i class="fa fa-search"><input type="text" name="search" placeholder="Patient ID" id="search"></i>
+					</div>
+					<button type="submit" class="search-btn">Search</button>
+				</form>	
+			</div>
+			<a class="logoutBtn" href="/logout">LOGOUT</a>
+
+		</div>
+
+		<!--Script for checking valid inputs in login form -->
+		<script>
+			function verify(){
+				var x = document.forms["patient_search"]["search"].value;
+
+				if(x == ""){
+					alert("Please enter patient ID");
+					return false
+				}
+			}
+		</script>
+
+<%- include ("../partials/footer") %>

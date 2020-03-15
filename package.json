@@ -1,0 +1,20 @@
+{
+  "name": "curamme",
+  "version": "1.0.0",
+  "description": "Web App part of Curam Me application for Medication and Task distribution in a frontine medical environment",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Jonathan Flanagan & Neil Fitzgerald",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.2"
+  }
+}

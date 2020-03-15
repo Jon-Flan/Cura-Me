@@ -1,0 +1,36 @@
+<%- include ("../partials/header") %> <!--Call header from partial file -->
+
+<div class="loginWrapper"> <!-- Wrapper for the login section -->
+			<div class="logo"></div> <!--Div to house the logo -->
+			<div class="title">Curám Mé</div> <!--Title div -->
+			<div class="sub-title">Medical Task Management</div> <!--Sub title Div -->
+			<div class="loginInputs"> <!-- Div to house the input of the login incase padding or adjustments are needed -->
+				<form name="loginForm" accept-charset="UTF-8" action="/login" method="post" onsubmit="return verify()">
+					<div class="field">
+					
+						<i class="fa fa-user"><input type="text" name="username" placeholder="username" id="username"></i>
+					</div>
+					<div class="field">
+	
+						<i class="fa fa-lock"><input type="password" name="password" placeholder="password" id="password"></i>
+					</div>
+					<button type="submit" class="signin-btn">LOG IN</button>
+				</form>	
+
+			</div>
+		</div>
+
+		<!--Script for checking valid inputs in login form -->
+		<script>
+			function verify(){
+				var x = document.forms["loginForm"]["username"].value;
+				var y = document.forms["loginForm"]["password"].value;
+
+				if(x == "" || y ==""){
+					alert("All details must be filled in");
+					return false //return false if all inputs aren't filled in
+				}
+			}
+		</script>
+
+<%- include ("../partials/footer") %>  <!--Call footer from partial file -->

@@ -13,12 +13,13 @@ body{
 	color: white; /** set text to white **/
 	font-family: 'Sen', sans-serif; /** use the google font if not set to sanf serif **/
 	font-weight: 300; /** set the font boldness **/
+	background: linear-gradient(90deg, rgba(2,98,82,1) 0%, rgba(0,101,84,1) 71%, rgba(1,113,95,1) 100%);
 	
 }
 
 .loginWrapper{
-	width: 330px; /** set the login main box wrapper to 430px width **/
-	height: 590px; /** set the login main box wrapper height to 700px  **/
+	width: 100%; /** set the login main box wrapper to 430px width **/
+	height: 100%; /** set the login main box wrapper height to 700px  **/
 	padding: 60px 0px 35px 0px; /** place padding around the main login box **/
 	border-radius: 10px; /** curved edges on the login box **/
 	background: linear-gradient(90deg, rgba(2,98,82,1) 0%, rgba(0,101,84,1) 71%, rgba(1,113,95,1) 100%);
@@ -26,8 +27,8 @@ body{
 }
 
 .mainWrapper{
-	width: 330px; /** set the login main box wrapper to 430px width **/
-	height: 590px; /** set the login main box wrapper height to 700px  **/
+	width: 100%; /** set the login main box wrapper to 430px width **/
+	height: 100%; /** set the login main box wrapper height to 700px  **/
 	padding: 10px 0px 35px 0px; /** place padding around the main login box **/
 	border-radius: 10px; /** curved edges on the login box **/
 	background: linear-gradient(90deg, rgba(2,98,82,1) 0%, rgba(0,101,84,1) 71%, rgba(1,113,95,1) 100%);

@@ -4,7 +4,7 @@
   "description": "Web App part of Curam Me application for Medication and Task distribution in a frontine medical environment",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "app.js"
   },
   "author": "Jonathan Flanagan & Neil Fitzgerald",
   "license": "ISC",

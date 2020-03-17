@@ -5,6 +5,8 @@ var session = require("express-session");//call the express sessions module
 var app = express(); //declaration of app, initialising it as an object express 
 var bodyParser = require('body-parser');//allow access to body parser
 var mysql = require('mysql');//alows access to mysql and connect to our database
+var bcrypt = require('bcrypt');//allows us to encrypt any data transmissions to/from the database
+
 
 
 
